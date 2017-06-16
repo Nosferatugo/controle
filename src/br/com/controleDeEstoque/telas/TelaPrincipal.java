@@ -5,6 +5,8 @@
  */
 package br.com.controleDeEstoque.telas;
 
+import java.io.IOException;
+
 /**
  *
  * @author HugoNathan
@@ -116,6 +118,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu3.setText("Ferramentas");
 
         jMenuItem7.setText("Calculadora");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem7);
 
         jMenuBar1.add(jMenu3);
@@ -181,6 +188,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
         TelaCadastrarEscolas telaEscolas = new TelaCadastrarEscolas(null, true);
         telaEscolas.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+       
+
+   try{
+      Runtime.getRuntime().exec("calc");
+   }catch(IOException e){
+      e.printStackTrace();
+   }
+
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     /**
      * @param args the command line arguments
