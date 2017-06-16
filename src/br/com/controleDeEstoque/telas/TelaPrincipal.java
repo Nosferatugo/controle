@@ -64,6 +64,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/controleDeEstoque/imagens/subProduto.png"))); // NOI18N
         jButton2.setText("Registrar Saída");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 270, 110));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/controleDeEstoque/imagens/addProduto.png"))); // NOI18N
@@ -199,6 +204,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
    }
 
     }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       TelaSaídaProdutos telaSaida = new TelaSaídaProdutos();
+       telaSaida.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
