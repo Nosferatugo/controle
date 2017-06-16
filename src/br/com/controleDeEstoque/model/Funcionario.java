@@ -38,6 +38,7 @@ public class Funcionario extends Pessoa implements Serializable{
 
     public String getInscricao() {
         return inscricao;
+        
     }
 
     public void setInscricao(String inscricao) {
@@ -78,6 +79,13 @@ public class Funcionario extends Pessoa implements Serializable{
     public void setMaxDesconto(Double maxDesconto) {
         this.maxDesconto = maxDesconto;
     }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" + "inscricao=" + inscricao + ", login=" + login + ", senha=" + senha + ", autorizarDesconto=" + autorizarDesconto + ", maxDesconto=" + maxDesconto + '}';
+    }
+
+   
     
     
 

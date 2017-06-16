@@ -25,7 +25,7 @@ import javax.persistence.TemporalType;
 
 /**
  *
- * @author Onismar
+ * 
  */
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
@@ -166,7 +166,9 @@ public class Pessoa implements Serializable {
 
     @Override
     public String toString() {
-        return "br.com.map.model.Pessoa[ id=" + id + " ]";
+        return "Pessoa{" + "id=" + id + ", nome=" + nome + ", cpf=" + cpf + '}';
     }
+
+    
     
 }
