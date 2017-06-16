@@ -32,9 +32,9 @@ public class ControleDeEstoque {
 
         try {
 //            daof.salvar(f);
-//            fachada.salvarFuncionario(f);
-            List<Funcionario> lista =  fachada.getTodosFuncionarios();
-            System.out.println(lista.toString());
+            fachada.salvarFuncionario(f);
+//            List<Funcionario> lista =  fachada.getTodosFuncionarios();
+//            System.out.println(lista.toString());
         } catch (ExceptionDAO ex) {
             Logger.getLogger(ControleDeEstoque.class.getName()).log(Level.SEVERE, null, ex);
         }
