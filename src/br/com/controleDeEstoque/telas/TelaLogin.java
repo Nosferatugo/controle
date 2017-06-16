@@ -93,7 +93,7 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonEntrarActionPerformed
 
     private void jButtonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelarActionPerformed
-        System.exit(0);
+          System.exit(0);
     }//GEN-LAST:event_jButtonCancelarActionPerformed
 
     /**
