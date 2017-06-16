@@ -64,7 +64,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 590, 120, 80));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/controleDeEstoque/imagens/subProduto.png"))); // NOI18N
-        jButton2.setText("Registrar Saída em Estoque");
+        jButton2.setText("   Registrar Saída em Estoque");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -81,7 +81,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 310, 110));
 
-        jButton4.setText("Cadastro de Produtos");
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/controleDeEstoque/imagens/dbbddcb8478a9e3ec707766331aa9932.png"))); // NOI18N
+        jButton4.setText("     Cadastro de Produtos");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -230,7 +231,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        TelaCadastroProdutos telaProdutos = new TelaCadastroProdutos();
+        telaProdutos.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
