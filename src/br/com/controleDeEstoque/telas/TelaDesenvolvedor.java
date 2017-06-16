@@ -70,10 +70,10 @@ public class TelaDesenvolvedor extends javax.swing.JDialog {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 120, 50));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 120, 50));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/controleDeEstoque/imagens/LogoHNInfo.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, -1, 230));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, -1, 230));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/controleDeEstoque/imagens/TelaLogin.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, -1));
