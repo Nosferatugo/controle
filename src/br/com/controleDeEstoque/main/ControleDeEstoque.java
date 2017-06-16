@@ -5,6 +5,12 @@
  */
 package br.com.controleDeEstoque.main;
 
+import br.com.controleDeEstoque.commom.exception.ExceptionDAO;
+import br.com.controleDeEstoque.dao.FuncionarioDAO;
+import br.com.controleDeEstoque.model.Funcionario;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Dell
@@ -15,7 +21,14 @@ public class ControleDeEstoque {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       FuncionarioDAO daof = new FuncionarioDAO();
+       Funcionario f = new Funcionario();
+       f.setNome("alan");
+        try {
+            daof.salvar(f);
+        } catch (ExceptionDAO ex) {
+            Logger.getLogger(ControleDeEstoque.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }
