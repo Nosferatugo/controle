@@ -28,32 +28,32 @@ public class TelaCadastroProdutos extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButtonRegistrarProduto = new javax.swing.JButton();
+        jButtonCancelar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jTextFieldNomeDoProduto = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jTextFieldValidade = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBoxFornecedor = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBoxUnidade = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        jTextFieldEstoqueInicial = new javax.swing.JTextField();
+        jTextFieldDisponivelEmEstoque = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        jComboBoxReposicao = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        jTextFieldMediaDeEntrada = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        jTextFieldMediaDeSaida = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        jButtonNovoProduto = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -63,46 +63,55 @@ public class TelaCadastroProdutos extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setText("Registrar Produto");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(554, 306, 128, 59));
+        jButtonRegistrarProduto.setText("Registrar Produto");
+        jButtonRegistrarProduto.setEnabled(false);
+        jPanel1.add(jButtonRegistrarProduto, new org.netbeans.lib.awtextra.AbsoluteConstraints(554, 306, 128, 59));
 
-        jButton3.setText("Cancelar");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButtonCancelar.setText("Cancelar");
+        jButtonCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButtonCancelarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(692, 306, 128, 59));
+        jPanel1.add(jButtonCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(692, 306, 128, 59));
 
         jLabel2.setText("NOME DO PRODUTO:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 33, 252, -1));
+
+        jTextFieldNomeDoProduto.setEnabled(false);
+        jPanel1.add(jTextFieldNomeDoProduto, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 33, 252, -1));
 
         jLabel3.setText("VALIDADE DO PRODUTO:");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 13, -1, -1));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 33, 83, -1));
+
+        jTextFieldValidade.setEnabled(false);
+        jPanel1.add(jTextFieldValidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 33, 83, -1));
 
         jLabel4.setText("FORNECEDOR:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(616, 13, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(616, 33, 190, -1));
+        jComboBoxFornecedor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxFornecedor.setEnabled(false);
+        jPanel1.add(jComboBoxFornecedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(616, 33, 190, -1));
 
         jLabel5.setText("UNIDADE DE MEDIDA:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 13, -1, -1));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Unidade", "Kg", "Litro", "Caixa", "Lata" }));
-        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 33, 107, -1));
+        jComboBoxUnidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Unidade", "Kg", "Litro", "Caixa", "Lata" }));
+        jComboBoxUnidade.setEnabled(false);
+        jPanel1.add(jComboBoxUnidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 33, 107, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel6.setText("ESTOQUE INICIAL:");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 101, -1, -1));
 
-        jTextField3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 143, 97, 49));
+        jTextFieldEstoqueInicial.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jTextFieldEstoqueInicial.setEnabled(false);
+        jPanel1.add(jTextFieldEstoqueInicial, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 143, 97, 49));
 
-        jTextField4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 231, 97, 49));
+        jTextFieldDisponivelEmEstoque.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jTextFieldDisponivelEmEstoque.setEnabled(false);
+        jPanel1.add(jTextFieldDisponivelEmEstoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 231, 97, 49));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel7.setText("DISPONIVEL EM ESTOQUE:");
@@ -114,30 +123,33 @@ public class TelaCadastroProdutos extends javax.swing.JFrame {
         jLabel9.setText("QUANTIDADE:");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 108, -1, -1));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50" }));
-        jPanel1.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
+        jComboBoxReposicao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50" }));
+        jComboBoxReposicao.setEnabled(false);
+        jPanel1.add(jComboBoxReposicao, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel10.setText("MÉDIA DE ENTRADA:");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(616, 101, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, -1, -1));
 
-        jTextField5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(616, 129, 97, 49));
+        jTextFieldMediaDeEntrada.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jTextFieldMediaDeEntrada.setEnabled(false);
+        jPanel1.add(jTextFieldMediaDeEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 140, 97, 49));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel11.setText("MÉDIA DE SAÍDA:");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(616, 185, -1, -1));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, -1, -1));
 
-        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(616, 213, 97, 49));
+        jTextFieldMediaDeSaida.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jTextFieldMediaDeSaida.setEnabled(false);
+        jPanel1.add(jTextFieldMediaDeSaida, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, 97, 49));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel12.setText("R$");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 150, -1, 22));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 160, -1, 22));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel13.setText("R$");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 230, -1, 22));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 250, -1, 22));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -157,8 +169,13 @@ public class TelaCadastroProdutos extends javax.swing.JFrame {
         jLabel14.setText("CÓDIGO DE BARRAS:");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 286, -1, -1));
 
-        jButton4.setText("Novo Produto");
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(416, 306, 128, 59));
+        jButtonNovoProduto.setText("Novo Produto");
+        jButtonNovoProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonNovoProdutoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonNovoProduto, new org.netbeans.lib.awtextra.AbsoluteConstraints(416, 306, 128, 59));
 
         jLabel15.setText("O Usuário será Notificado quando");
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 143, -1, -1));
@@ -196,9 +213,23 @@ public class TelaCadastroProdutos extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButtonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelarActionPerformed
         dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_jButtonCancelarActionPerformed
+
+    private void jButtonNovoProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNovoProdutoActionPerformed
+        jTextFieldNomeDoProduto.setEnabled(true);
+        jTextFieldValidade.setEnabled(true);
+        jComboBoxUnidade.setEnabled(true);
+        jComboBoxFornecedor.setEnabled(true);
+        jComboBoxReposicao.setEnabled(true);
+        jTextFieldEstoqueInicial.setEnabled(true);
+        jTextFieldDisponivelEmEstoque.setEnabled(true);
+        jTextFieldMediaDeEntrada.setEnabled(true);
+        jTextFieldMediaDeSaida.setEnabled(true);
+        jButtonNovoProduto.setEnabled(false);
+        jButtonRegistrarProduto.setEnabled(true);
+    }//GEN-LAST:event_jButtonNovoProdutoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -237,12 +268,12 @@ public class TelaCadastroProdutos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JButton jButtonCancelar;
+    private javax.swing.JButton jButtonNovoProduto;
+    private javax.swing.JButton jButtonRegistrarProduto;
+    private javax.swing.JComboBox<String> jComboBoxFornecedor;
+    private javax.swing.JComboBox<String> jComboBoxReposicao;
+    private javax.swing.JComboBox<String> jComboBoxUnidade;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -261,11 +292,11 @@ public class TelaCadastroProdutos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextFieldDisponivelEmEstoque;
+    private javax.swing.JTextField jTextFieldEstoqueInicial;
+    private javax.swing.JTextField jTextFieldMediaDeEntrada;
+    private javax.swing.JTextField jTextFieldMediaDeSaida;
+    private javax.swing.JTextField jTextFieldNomeDoProduto;
+    private javax.swing.JTextField jTextFieldValidade;
     // End of variables declaration//GEN-END:variables
 }
